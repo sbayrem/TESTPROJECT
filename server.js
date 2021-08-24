@@ -12,9 +12,9 @@ const normalizePort = val => {
   }
   return false;
 };
-const port = normalizePort(process.env.PORT || '3000');
+const port = normalizePort(process.env.PORT || '8080');
 app.set('port', port);
-
+//app.listen(8080,'0.0.0.0');
 const errorHandler = error => {
   if (error.syscall !== 'listen') {
     throw error;
